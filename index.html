@@ -47,5 +47,40 @@
     <label for="msg">Message:</label>
     <textarea id="msg" name="user_message"></textarea>
   </div>
+  <div>
+    <label for="date">Date:</label>
+    <input type="date"
+    min="2019-01-01" max="2019-12-31">
+  </div>
+  <div>
+    <label for="number">Number:</label>
+    <input type="number" min="0" max="100">
+  </div>
+  <div>
+    <label for="url">Enter an https:// URL:</label>
+    <input type="url" name="url" id="url">
+  </div>
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+</div>
+
+<div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+<fieldset>
+  <legend>Are you ready?</legend>
+<div>
+  <input type="checkbox" id="ready" name="ready"
+         checked>
+  <label for="ready">yes</label>
+  <input type="checkbox" id="not-ready" name="not-ready">
+  <label for="not-ready">no</label>
+</div>
+</fieldset>
+<input type="submit" value="Sign in">
 </form>
+
 </html>
